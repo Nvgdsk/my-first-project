@@ -1,0 +1,12 @@
+<div>
+  <div class="modal"  (click)="modal_close(modal_open)" [ngClass]="modal_open==false?'asd':'modal_open'"></div>
+  <div class="modal-content"  [ngClass]="modal_open==false?'asd':'modal_open'">
+    <h2>Вход</h2>
+    <form action="">
+      <input type="text" class="inline-input" name="login" placeholder="example@gmail.com">
+      <input type="password" class="inline-input" name="password" placeholder="password">
+    </form>
+    <a class="btn" id="SignIn">Sign in</a>
+    <a class="btn" id="SignUp">Sign up</a>
+  </div>
+</div>

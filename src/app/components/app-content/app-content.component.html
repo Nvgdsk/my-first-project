@@ -1,0 +1,11 @@
+<div class="content" [ngClass]="showMePartially==true?'asd':'non-active-left'" >
+
+  <div class="main-news">
+
+  <app-content-items-news *ngFor="let number of [0,1,2,3,4,5,6,7,8,9,10]"></app-content-items-news>
+
+  </div>
+  <div class="in-news frame">
+  <app-content-items-news-right></app-content-items-news-right>
+</div>
+</div>

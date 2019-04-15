@@ -1,0 +1,16 @@
+<div  class="leftbar"   [ngClass]="showMePartially==true?'asd':'disable-left'">
+  <div class="listbar" >
+    <div class="itembar" [ngClass]="current_menu==0?'current':''" (click)="setcur(0)" ><i class="material-icons">featured_play_list</i><a href="index.html">Главные новости</a></div>
+    <div class="itembar" [ngClass]="current_menu==1?'current':''"(click)="setcur(1)"><i class="material-icons">person</i>Рекомендованые вам</div>
+    <div class="itembar" [ngClass]="current_menu==2?'current':''" (click)="setcur(2)"><i class="material-icons">star_border</i>Избраное</div>
+    <div class="itembar" [ngClass]="current_menu==3?'current':''" (click)="setcur(3)"><i class="material-icons">search</i>Сохраненные запросы</div>
+
+    <div class="hr"></div>
+    <div class="itembar" [ngClass]="current_menu==4?'current':''"(click)="setcur(4)"><i class="material-icons">flag</i>Украина</div>
+    <div class="itembar" [ngClass]="current_menu==5?'current':''" (click)="setcur(5)"><i class="material-icons">public</i>В мире</div>
+    <div class="itembar" [ngClass]="current_menu==6?'current':''" (click)="setcur(6)"> <i class="material-icons">place</i>Местные</div>
+    <div class="itembar" [ngClass]="current_menu==7?'current':''" (click)="setcur(7)"><i class="material-icons">directions_bike</i>Спорт</div>
+    <div class="itembar" [ngClass]="current_menu==8?'current':''" (click)="setcur(8)"><i class="material-icons">accessibility</i>Выборы</div>
+    <div class="hr"></div>
+  </div>
+</div>

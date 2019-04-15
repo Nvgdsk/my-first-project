@@ -1,0 +1,21 @@
+<header>
+  <nav>
+    <div class="hitem"><i class="material-icons" (click)="LeftMenuClick()"> dehaze</i>Google news</div>
+    <div class="hitem search">
+      <form action="">
+        <i class="material-icons">search</i>
+        <input type="text"  id="search-field"placeholder="Поиск тем, мест , источников">
+      </form>
+    </div>
+    <div class="hitem right">
+      <a href="#!" id="opensing" (click)="OpenModal() ">Sign in</a>
+      <i class="material-icons">person</i>
+    </div>
+
+  </nav>
+  <app-app-left-menu [showMePartially]="checkLeftMenu" >
+
+  </app-app-left-menu>
+  <app-modal-autorization [modal_open]="openmodal"></app-modal-autorization>
+</header>
+<app-app-content [showMePartially]="checkLeftMenu"></app-app-content>
